@@ -32,3 +32,9 @@ gradle-app.setting
 .idea/misc.xml
 sandbox/out/production/classes/MyClass.class
 sandbox/out/production/classes/Rectangle.class
+.idea/uiDesigner.xml
+sandbox/out/test/classes/ru/alksndr/software/testing/sandbox/SquareTests.class
+sandbox/out/production/classes/ru/alksndr/software/testing/sandbox/Square.class
+sandbox/out/production/classes/ru/alksndr/software/testing/sandbox/Rectangle.class
+sandbox/out/production/classes/ru/alksndr/software/testing/sandbox/MyClass.class
+sandbox/out/production/classes/MyClass.class

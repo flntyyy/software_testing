@@ -1,3 +1,5 @@
+package ru.alksndr.software.testing.sandbox;
+
 public class Rectangle {
 
     public double a;
