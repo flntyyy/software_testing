@@ -30,3 +30,5 @@ gradle-app.setting
 .idea/modules/sandbox.iml
 .idea/vcs.xml
 .idea/misc.xml
+sandbox/out/production/classes/MyClass.class
+sandbox/out/production/classes/Rectangle.class
