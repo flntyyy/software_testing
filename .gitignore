@@ -12,3 +12,21 @@ gradle-app.setting
 
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
+.idea/modules/sandbox.iml
+.idea/workspace.xml
+.idea/vcs.xml
+.idea/modules/sandbox.test.iml
+.idea/modules/sandbox.main.iml
+.idea/modules/sandbox.iml
+.idea/modules.xml
+.idea/misc.xml
+.idea/gradle.xml
+.idea/encodings.xml
+.idea/compiler.xml
+.idea/.name
+.idea/gradle.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/modules/sandbox.iml
+.idea/vcs.xml
+.idea/misc.xml
