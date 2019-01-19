@@ -1,4 +1,4 @@
-package ru.alksndr.software.testing.addressbook;
+package ru.alksndr.software.testing.addressbook.model;
 
 public class GroupData {
     private final String name;

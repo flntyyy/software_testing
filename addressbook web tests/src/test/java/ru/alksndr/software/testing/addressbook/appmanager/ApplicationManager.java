@@ -1,22 +1,19 @@
-package ru.alksndr.software.testing.addressbook;
+package ru.alksndr.software.testing.addressbook.appmanager;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import ru.alksndr.software.testing.addressbook.model.GroupData;
 
 import java.util.concurrent.TimeUnit;
 
 import static org.testng.Assert.fail;
 
-public class GroupCreationTests {
+public class ApplicationManager {
     WebDriver driver;
     private boolean acceptNextAlert = true;
     private StringBuffer verificationErrors = new StringBuffer();
 
-    @BeforeMethod
-    public void setUp() throws Exception {
+    public void init() {
         System.setProperty("webdriver.gecko.driver", "drivers/chromedriver");
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -34,24 +31,15 @@ public class GroupCreationTests {
         driver.findElement(By.id("LoginForm")).submit();
     }
 
-    @Test
-    public void testGroupCreation() throws Exception {
-        dotoGroupPage();
-        initGroupCreation();
-        fillGroupForm(new GroupData("Test1", "test2", "test3"));
-        submitGroupCreation();
-        returnToGroupPage();
-    }
-
-    private void returnToGroupPage() {
+    public void returnToGroupPage() {
         driver.findElement(By.linkText("group page")).click();
     }
 
-    private void submitGroupCreation() {
+    public void submitGroupCreation() {
         driver.findElement(By.name("submit")).click();
     }
 
-    private void fillGroupForm(GroupData groupData) {
+    public void fillGroupForm(GroupData groupData) {
         driver.findElement(By.name("group_name")).click();
         driver.findElement(By.name("group_name")).clear();
         driver.findElement(By.name("group_name")).sendKeys(groupData.getName());
@@ -63,16 +51,15 @@ public class GroupCreationTests {
         driver.findElement(By.name("group_footer")).sendKeys(groupData.getFooter());
     }
 
-    private void initGroupCreation() {
+    public void initGroupCreation() {
         driver.findElement(By.name("new")).click();
     }
 
-    private void dotoGroupPage() {
+    public void gotoGroupPage() {
         driver.findElement(By.linkText("groups")).click();
     }
 
-    @AfterMethod
-    public void tearDown() throws Exception {
+    public void stop() {
         driver.quit();
         String verificationErrorString = verificationErrors.toString();
         if (!"".equals(verificationErrorString)) {
@@ -111,5 +98,13 @@ public class GroupCreationTests {
         } finally {
             acceptNextAlert = true;
         }
+    }
+
+    public void deleteSelectedGroups() {
+        driver.findElement(By.name("delete")).click();
+    }
+
+    public void selectGroup() {
+        driver.findElement(By.name("selected[]")).click();
     }
 }
