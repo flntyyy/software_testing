@@ -25,7 +25,7 @@ WebDriver driver;
   }
 
   @Test
-  public void testUntitledTestCase() throws Exception {
+  public void testGroupCreation() throws Exception {
     driver.get("http://localhost/addressbook/index.php");
     driver.findElement(By.name("user")).click();
     driver.findElement(By.name("user")).clear();
@@ -48,7 +48,7 @@ WebDriver driver;
     driver.findElement(By.linkText("group page")).click();
   }
 
-  @AfterClass(alwaysRun = true)
+  @AfterMethod
   public void tearDown() throws Exception {
     driver.quit();
     String verificationErrorString = verificationErrors.toString();
