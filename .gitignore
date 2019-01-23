@@ -54,3 +54,4 @@ addressbook web tests/out/test/classes/ru/alksndr/software/testing/addressbook/a
 addressbook web tests/out/test/classes/ru/alksndr/software/testing/addressbook/tests/GroupCreationTests.class
 addressbook web tests/out/test/classes/ru/alksndr/software/testing/addressbook/tests/GroupDeletionTests.class
 addressbook web tests/out/test/classes/ru/alksndr/software/testing/addressbook/tests/GroupModificationTests.class
+*.class
