@@ -57,3 +57,4 @@ addressbook web tests/out/test/classes/ru/alksndr/software/testing/addressbook/t
 *.class
 *.class
 *.class
+*.class

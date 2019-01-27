@@ -71,7 +71,6 @@ public class GroupHelper extends HelperBase {
         selectGroupById(group.getId());
         deleteSelectedGroups();
         groupCache = null;
-
         returnToGroupPage();
     }
 

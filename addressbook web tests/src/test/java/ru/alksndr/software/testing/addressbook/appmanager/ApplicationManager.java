@@ -15,6 +15,7 @@ public class ApplicationManager {
     WebDriver driver;
     private NavigationHelper navigationHelper;
     private GroupHelper groupHelper;
+    private ContactHelper contactHelper;
     private SessionHelper sessionHelper;
     private StringBuffer verificationErrors = new StringBuffer();
     private String browser;
@@ -38,6 +39,7 @@ public class ApplicationManager {
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
         driver.get("http://localhost/addressbook/");
         groupHelper = new GroupHelper(driver);
+        contactHelper = new ContactHelper(driver);
         navigationHelper = new NavigationHelper(driver);
         sessionHelper = new SessionHelper(driver);
         sessionHelper.login("admin", "secret");
@@ -53,6 +55,10 @@ public class ApplicationManager {
 
     public GroupHelper group() {
         return groupHelper;
+    }
+
+    public ContactHelper contact() {
+        return contactHelper;
     }
 
     public NavigationHelper goTo() {
