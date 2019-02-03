@@ -29,7 +29,7 @@ public class GroupModificationTests extends TestBase {
                 .withId(modifiedGroup.getId()).withName("test13378").withHeader("321").withFooter("456");
         app.group().modify(group);
 
-        assertThat(app.group().count(), equalTo(before.size() + 1));
+        assertThat(app.group().count(), equalTo(before.size()));
         Groups after = app.group().all();
 
 

@@ -17,5 +17,4 @@ public class ContactCreationTests extends TestBase {
         app.contact().returnToHomePage();
     }
 
-
 }
