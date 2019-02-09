@@ -31,7 +31,7 @@ public class ApplicationManager {
         String target = System.getProperty("targer", "local");
 
         properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties", target))));
-         
+
         if (browser.equals(BrowserType.GOOGLECHROME)) {
             System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
             driver = new ChromeDriver();
@@ -50,6 +50,14 @@ public class ApplicationManager {
 
     public void stop() {
         driver.quit();
+    }
+
+    public HttpSession newSession() {
+        return new HttpSession(this);
+    }
+
+    public String getProperty(String key) {
+        return properties.getProperty(key);
     }
 
 }

@@ -60,3 +60,8 @@ addressbook web tests/out/test/classes/ru/alksndr/software/testing/addressbook/t
 *.class
 *.class
 *.log
+.idea/libraries/Gradle__org_apache_httpcomponents_httpcore_4_4_11.xml
+.idea/libraries/Gradle__org_apache_httpcomponents_httpclient_4_5_7.xml
+.idea/libraries/Gradle__commons_logging_commons_logging_1_2.xml
+.idea/libraries/Gradle__commons_codec_commons_codec_1_11.xml
+*.iml
