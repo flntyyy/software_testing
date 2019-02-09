@@ -13,6 +13,8 @@ dependencies {
     compile 'com.thoughtworks.xstream:xstream:1.4.11.1'
     compile 'com.google.code.gson:gson:2.8.5'
     compile 'ch.qos.logback:logback-classic:1.3.0-alpha4'
+    compile 'mysql:mysql-connector-java:8.0.15'
+    compile 'org.hibernate:hibernate-core:5.4.1.Final'
 }
 
 task testGroups(type: Test) {
@@ -25,6 +27,9 @@ task testGroups(type: Test) {
     if (project.hasProperty('target')) {
         systemProperty 'target', "${target}"
     }
+    if (project.hasProperty('verifyUI')) {
+        systemProperty 'verifyUI', "${verifyUI}"
+    }
 }
 task testContacts(type: Test) {
     useTestNG {
@@ -35,6 +40,9 @@ task testContacts(type: Test) {
     }
     if (project.hasProperty('target')) {
         systemProperty 'target', "${target}"
+    }
+    if (project.hasProperty('verifyUI')) {
+        systemProperty 'verifyUI', "${verifyUI}"
     }
 }
 

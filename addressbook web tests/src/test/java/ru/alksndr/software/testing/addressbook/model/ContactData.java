@@ -1,23 +1,59 @@
 package ru.alksndr.software.testing.addressbook.model;
 
-import java.io.File;
-import java.util.Objects;
+import org.hibernate.annotations.Type;
 
+import javax.persistence.*;
+import java.io.File;
+import java.util.HashSet;
+import java.util.Objects;
+import java.util.Set;
+
+@Entity
+@Table(name = "addressbook")
 public class ContactData {
 
+    @Id
+    @Column(name = "id")
     private int id;
+
+    @Column(name = "firstname")
     private String firstname;
+
+    @Column(name = "middlename")
     private String middlename;
+
+    @Column(name = "lastname")
     private String lastname;
+
+
+    @Type(type = "text")
+    @Column(name = "home")
     private String homePhone;
+
+    @Type(type = "text")
+    @Column(name = "mobile")
     private String mobilePhone;
+
+    @Type(type = "text")
+    @Column(name = "work")
     private String workPhone;
+
+    @Transient
     private String allPhones;
-    private File photo;
 
 
+    @Column(name = "photo")
+    @Type(type = "text")
+    private String photo;
 
-    private String group;
+    public Groups getGroups() {
+        return new Groups(groups);
+    }
+
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "address_in_groups", joinColumns = @JoinColumn(name = "id"),
+            inverseJoinColumns = @JoinColumn(name = "group_id"))
+    private Set<GroupData> groups = new HashSet<GroupData>();
 
     @Override
     public boolean equals(Object o) {
@@ -104,21 +140,27 @@ public class ContactData {
         return this;
     }
 
-    public String getGroup() {
-        return group;
-    }
-
-    public ContactData withGroup(String group) {
-        this.group = group;
-        return this;
-    }
 
     public File getPhoto() {
-        return photo;
+        return new File(photo);
     }
 
     public ContactData withPhoto(File photo) {
-        this.photo = photo;
+        this.photo = photo.getPath();
+        return this;
+    }
+
+    @Override
+    public String toString() {
+        return "ContactData{" +
+                "id=" + id +
+                ", firstname='" + firstname + '\'' +
+                ", middlename='" + middlename + '\'' +
+                '}';
+    }
+
+    public ContactData inGroup(GroupData group) {
+        groups.add(group);
         return this;
     }
 }

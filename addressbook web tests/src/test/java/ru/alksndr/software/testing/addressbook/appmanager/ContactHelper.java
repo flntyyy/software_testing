@@ -15,14 +15,6 @@ public class ContactHelper extends HelperBase {
         super(driver);
     }
 
-    public void returnToHomePage() {
-        click(By.linkText("home page"));
-    }
-
-
-    public void initContactCreation() {
-        click(By.xpath("//*[@id=\"nav\"]/ul/li[2]/a"));
-    }
 
     public void fillContactForm(ContactData contactData) {
         attach(By.name("photo"), contactData.getPhoto());
@@ -32,8 +24,17 @@ public class ContactHelper extends HelperBase {
         type(By.name("home"), contactData.getHomePhone());
         type(By.name("mobile"), contactData.getMobilePhone());
         type(By.name("work"), contactData.getWorkPhone());
+    }
 
 
+
+    public void returnToHomePage() {
+        click(By.linkText("home page"));
+    }
+
+
+    public void initContactCreation() {
+        click(By.xpath("//*[@id=\"nav\"]/ul/li[2]/a"));
     }
 
     public void initContactModificationById(int id) {

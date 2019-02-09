@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import static org.openqa.selenium.remote.BrowserType.FIREFOX;
 import static org.testng.Assert.fail;
 
 public class ApplicationManager {
@@ -24,6 +25,7 @@ public class ApplicationManager {
     private SessionHelper sessionHelper;
     private StringBuffer verificationErrors = new StringBuffer();
     private String browser;
+    private DbHelper dbHelper;
 
     public ApplicationManager(String browser) {
         this.browser = browser;
@@ -35,10 +37,13 @@ public class ApplicationManager {
         String target = System.getProperty("targer", "local");
 
         properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties", target))));
+
+        dbHelper = new DbHelper();
+
         if (browser.equals(BrowserType.GOOGLECHROME)) {
             System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
             driver = new ChromeDriver();
-        } else if (browser.equals(BrowserType.FIREFOX)) {
+        } else if (browser.equals(FIREFOX)) {
             System.setProperty("webdriver.gecko.driver", "drivers/geckodriver");
             driver = new FirefoxDriver();
         } else if (browser.equals(BrowserType.SAFARI)) {
@@ -53,6 +58,7 @@ public class ApplicationManager {
         navigationHelper = new NavigationHelper(driver);
         sessionHelper = new SessionHelper(driver);
         sessionHelper.login(properties.getProperty("web.adminLogin"), properties.getProperty("web.adminPassword"));
+
     }
 
     public void stop() {
@@ -73,5 +79,9 @@ public class ApplicationManager {
 
     public NavigationHelper goTo() {
         return navigationHelper;
+    }
+
+    public DbHelper db() {
+        return dbHelper;
     }
 }
