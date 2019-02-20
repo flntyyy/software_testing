@@ -13,12 +13,14 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import static org.openqa.selenium.remote.BrowserType.FIREFOX;
-
 public class ApplicationManager {
     private final Properties properties;
-    WebDriver driver;
+    private WebDriver driver;
     private String browser;
+    private RegistrationHelper registrationHelper;
+    private FtpHelper ftp;
+    private MailHelper mailHelper;
+    private SoapHelper soapHelper;
 
 
     public ApplicationManager(String browser) {
@@ -28,28 +30,14 @@ public class ApplicationManager {
     }
 
     public void init() throws IOException {
-        String target = System.getProperty("targer", "local");
-
+        String target = System.getProperty("target", "local");
         properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties", target))));
-
-        if (browser.equals(BrowserType.GOOGLECHROME)) {
-            System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
-            driver = new ChromeDriver();
-        } else if (browser.equals(FIREFOX)) {
-            System.setProperty("webdriver.gecko.driver", "drivers/geckodriver");
-            driver = new FirefoxDriver();
-        } else if (browser.equals(BrowserType.SAFARI)) {
-            driver = new SafariDriver();
-        }
-
-
-        driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-        driver.get(properties.getProperty("web.baseUrl"));
-
     }
 
     public void stop() {
-        driver.quit();
+        if (driver != null) {
+            driver.quit();
+        }
     }
 
     public HttpSession newSession() {
@@ -60,4 +48,48 @@ public class ApplicationManager {
         return properties.getProperty(key);
     }
 
+    public RegistrationHelper registration() {
+        if (registrationHelper == null) {
+            registrationHelper = new RegistrationHelper(this);
+        }
+        return registrationHelper;
+    }
+
+    public FtpHelper ftp() {
+        if (ftp == null) {
+            ftp = new FtpHelper(this);
+        }
+        return ftp;
+    }
+
+    public WebDriver getDriver() {
+        if (driver == null) {
+            if (browser.equals(BrowserType.GOOGLECHROME)) {
+                System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
+                driver = new ChromeDriver();
+            } else if (browser.equals(BrowserType.FIREFOX)) {
+                System.setProperty("webdriver.gecko.driver", "drivers/geckodriver");
+                driver = new FirefoxDriver();
+            } else if (browser.equals(BrowserType.SAFARI)) {
+                driver = new SafariDriver();
+            }
+            driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+            driver.get(properties.getProperty("web.baseUrl"));
+        }
+        return driver;
+    }
+
+    public MailHelper mail() {
+        if (mailHelper == null) {
+            mailHelper = new MailHelper(this);
+        }
+        return mailHelper;
+    }
+
+    public SoapHelper soap() {
+        if (soapHelper == null){
+            soapHelper = new SoapHelper(this);
+        }
+        return soapHelper;
+    }
 }

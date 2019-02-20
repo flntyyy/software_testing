@@ -34,7 +34,7 @@ public class ApplicationManager {
     }
 
     public void init() throws IOException {
-        String target = System.getProperty("targer", "local");
+        String target = System.getProperty("target", "local");
 
         properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties", target))));
 
@@ -53,6 +53,7 @@ public class ApplicationManager {
 
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
         driver.get(properties.getProperty("web.baseUrl"));
+
         groupHelper = new GroupHelper(driver);
         contactHelper = new ContactHelper(driver);
         navigationHelper = new NavigationHelper(driver);
