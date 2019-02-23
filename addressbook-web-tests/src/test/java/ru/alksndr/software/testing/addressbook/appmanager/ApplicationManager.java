@@ -1,7 +1,7 @@
 
 package ru.alksndr.software.testing.addressbook.appmanager;
 
-import org.openqa.selenium.Capabilities;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -17,6 +17,7 @@ import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import static java.lang.System.getProperty;
 import static org.openqa.selenium.remote.BrowserType.FIREFOX;
 import static org.testng.Assert.fail;
 
@@ -38,7 +39,7 @@ public class ApplicationManager {
     }
 
     public void init() throws IOException {
-        String target = System.getProperty("target", "local");
+        String target = getProperty("target", "local");
 
         properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties", target))));
 
@@ -58,6 +59,7 @@ public class ApplicationManager {
         } else {
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setBrowserName(browser);
+            capabilities.setPlatform(Platform.fromString(getProperty("platform", "win7")));
             driver = new RemoteWebDriver(new URL(properties.getProperty("selenium.server")), capabilities);
         }
 
