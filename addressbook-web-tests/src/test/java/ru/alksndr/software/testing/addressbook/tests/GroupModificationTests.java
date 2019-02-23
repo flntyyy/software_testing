@@ -1,7 +1,5 @@
 package ru.alksndr.software.testing.addressbook.tests;
 
-import org.hamcrest.CoreMatchers;
-import org.hamcrest.MatcherAssert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.alksndr.software.testing.addressbook.model.GroupData;
