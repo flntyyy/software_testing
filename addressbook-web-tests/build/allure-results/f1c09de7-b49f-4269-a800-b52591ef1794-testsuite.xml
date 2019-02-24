@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1551037595864" stop="1551037612425" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Suite1 : Group</name>
+    <title>Suite1 : Group</title>
+    <test-cases>
+        <test-case start="1551037595980" stop="1551037598211" status="failed">
+            <name>testBadGroupCreation</name>
+            <failure>
+                <message>AssertionError: 
+Expected: &lt;8&gt;
+     but: was &lt;9&gt;</message>
+                <stack-trace>java.lang.AssertionError: 
+Expected: &lt;8&gt;
+     but: was &lt;9&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at ru.alksndr.software.testing.addressbook.tests.GroupCreationTests.testBadGroupCreation(GroupCreationTests.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:139)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:89)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:131)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+</stack-trace>
+            </failure>
+            <steps/>
+            <attachments>
+                <attachment title="Page screenshot" source="8ad56d55-186a-4562-927e-e2011b67eec5-attachment.png" type="image/png"/>
+            </attachments>
+            <labels>
+                <label name="testSuite" value="Suite1"/>
+                <label name="testGroup" value="Group"/>
+                <label name="testClass" value="ru.alksndr.software.testing.addressbook.tests.GroupCreationTests"/>
+                <label name="testMethod" value="testBadGroupCreation"/>
+                <label name="host" value="iMac-ALEXANDR.local"/>
+                <label name="thread" value="5736@iMac-ALEXANDR.local.Test worker(12)"/>
+            </labels>
+        </test-case>
+        <test-case start="1551037598351" stop="1551037600779" status="failed">
+            <name>testGroupCreation[GroupData{name='test 0', id='2147483647'}]</name>
+            <failure>
+                <message>AssertionError: 
+Expected: &lt;[GroupData{name='test13378', id='1'}, GroupData{name='test2', id='9'}, GroupData{name='test 0', id='10'}, GroupData{name='test 0', id='2'}, GroupData{name='test 3', id='5'}, GroupData{name='test 4', id='6'}, GroupData{name='test 1', id='3'}, GroupData{name='test 2', id='4'}, GroupData{name='test 5', id='7'}, GroupData{name='test 6', id='8'}]&gt;
+     but: was &lt;[GroupData{name='test13378', id='1'}, GroupData{name='test2', id='9'}, GroupData{name='test 0', id='10'}, GroupData{name='test 0', id='2'}, GroupData{name='test 3', id='5'}, GroupData{name='test 4', id='6'}, GroupData{name='test 1', id='3'}, GroupData{name='test 2', id='4'}, GroupData{name='test 5', id='7'}, GroupData{name='test 6', id='8'}]&gt;</message>
+                <stack-trace>java.lang.AssertionError: 
+Expected: &lt;[GroupData{name='test13378', id='1'}, GroupData{name='test2', id='9'}, GroupData{name='test 0', id='10'}, GroupData{name='test 0', id='2'}, GroupData{name='test 3', id='5'}, GroupData{name='test 4', id='6'}, GroupData{name='test 1', id='3'}, GroupData{name='test 2', id='4'}, GroupData{name='test 5', id='7'}, GroupData{name='test 6', id='8'}]&gt;
+     but: was &lt;[GroupData{name='test13378', id='1'}, GroupData{name='test2', id='9'}, GroupData{name='test 0', id='10'}, GroupData{name='test 0', id='2'}, GroupData{name='test 3', id='5'}, GroupData{name='test 4', id='6'}, GroupData{name='test 1', id='3'}, GroupData{name='test 2', id='4'}, GroupData{name='test 5', id='7'}, GroupData{name='test 6', id='8'}]&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at ru.alksndr.software.testing.addressbook.tests.GroupCreationTests.testGroupCreation(GroupCreationTests.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:139)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:89)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:131)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+</stack-trace>
+            </failure>
+            <steps/>
+            <attachments>
+                <attachment title="Page screenshot" source="a284c831-ea4a-467d-933a-7b1e60dd8283-attachment.png" type="image/png"/>
+            </attachments>
+            <labels>
+                <label name="testSuite" value="Suite1"/>
+                <label name="testGroup" value="Group"/>
+                <label name="testClass" value="ru.alksndr.software.testing.addressbook.tests.GroupCreationTests"/>
+                <label name="testMethod" value="testGroupCreation"/>
+                <label name="host" value="iMac-ALEXANDR.local"/>
+                <label name="thread" value="5736@iMac-ALEXANDR.local.Test worker(12)"/>
+            </labels>
+        </test-case>
+        <test-case start="1551037600780" stop="1551037602663" status="failed">
+            <name>testGroupCreation[GroupData{name='test 1', id='2147483647'}]</name>
+            <failure>
+                <message>AssertionError: 
+Expected: &lt;[GroupData{name='test13378', id='1'}, GroupData{name='test2', id='9'}, GroupData{name='test 0', id='10'}, GroupData{name='test 1', id='11'}, GroupData{name='test 0', id='2'}, GroupData{name='test 3', id='5'}, GroupData{name='test 4', id='6'}, GroupData{name='test 1', id='3'}, GroupData{name='test 2', id='4'}, GroupData{name='test 5', id='7'}, GroupData{name='test 6', id='8'}]&gt;
+     but: was &lt;[GroupData{name='test13378', id='1'}, GroupData{name='test2', id='9'}, GroupData{name='test 0', id='10'}, GroupData{name='test 1', id='11'}, GroupData{name='test 0', id='2'}, GroupData{name='test 3', id='5'}, GroupData{name='test 4', id='6'}, GroupData{name='test 1', id='3'}, GroupData{name='test 2', id='4'}, GroupData{name='test 5', id='7'}, GroupData{name='test 6', id='8'}]&gt;</message>
+                <stack-trace>java.lang.AssertionError: 
+Expected: &lt;[GroupData{name='test13378', id='1'}, GroupData{name='test2', id='9'}, GroupData{name='test 0', id='10'}, GroupData{name='test 1', id='11'}, GroupData{name='test 0', id='2'}, GroupData{name='test 3', id='5'}, GroupData{name='test 4', id='6'}, GroupData{name='test 1', id='3'}, GroupData{name='test 2', id='4'}, GroupData{name='test 5', id='7'}, GroupData{name='test 6', id='8'}]&gt;
+     but: was &lt;[GroupData{name='test13378', id='1'}, GroupData{name='test2', id='9'}, GroupData{name='test 0', id='10'}, GroupData{name='test 1', id='11'}, GroupData{name='test 0', id='2'}, GroupData{name='test 3', id='5'}, GroupData{name='test 4', id='6'}, GroupData{name='test 1', id='3'}, GroupData{name='test 2', id='4'}, GroupData{name='test 5', id='7'}, GroupData{name='test 6', id='8'}]&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at ru.alksndr.software.testing.addressbook.tests.GroupCreationTests.testGroupCreation(GroupCreationTests.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:139)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:89)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:131)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+</stack-trace>
+            </failure>
+            <steps/>
+            <attachments>
+                <attachment title="Page screenshot" source="5a9c0292-aa24-47c1-9952-425175b92cd3-attachment.png" type="image/png"/>
+            </attachments>
+            <labels>
+                <label name="testSuite" value="Suite1"/>
+                <label name="testGroup" value="Group"/>
+                <label name="testClass" value="ru.alksndr.software.testing.addressbook.tests.GroupCreationTests"/>
+                <label name="testMethod" value="testGroupCreation"/>
+                <label name="host" value="iMac-ALEXANDR.local"/>
+                <label name="thread" value="5736@iMac-ALEXANDR.local.Test worker(12)"/>
+            </labels>
+        </test-case>
+        <test-case start="1551037602668" stop="1551037605156" status="failed">
+            <name>testGroupCreation[GroupData{name='test 2', id='2147483647'}]</name>
+            <failure>
+                <message>AssertionError: 
+Expected: &lt;[GroupData{name='test13378', id='1'}, GroupData{name='test2', id='9'}, GroupData{name='test 0', id='10'}, GroupData{name='test 2', id='12'}, GroupData{name='test 1', id='11'}, GroupData{name='test 0', id='2'}, GroupData{name='test 3', id='5'}, GroupData{name='test 4', id='6'}, GroupData{name='test 1', id='3'}, GroupData{name='test 2', id='4'}, GroupData{name='test 5', id='7'}, GroupData{name='test 6', id='8'}]&gt;
+     but: was &lt;[GroupData{name='test 0', id='10'}, GroupData{name='test13378', id='1'}, GroupData{name='test2', id='9'}, GroupData{name='test 1', id='11'}, GroupData{name='test 2', id='12'}, GroupData{name='test 0', id='2'}, GroupData{name='test 3', id='5'}, GroupData{name='test 4', id='6'}, GroupData{name='test 1', id='3'}, GroupData{name='test 2', id='4'}, GroupData{name='test 5', id='7'}, GroupData{name='test 6', id='8'}]&gt;</message>
+                <stack-trace>java.lang.AssertionError: 
+Expected: &lt;[GroupData{name='test13378', id='1'}, GroupData{name='test2', id='9'}, GroupData{name='test 0', id='10'}, GroupData{name='test 2', id='12'}, GroupData{name='test 1', id='11'}, GroupData{name='test 0', id='2'}, GroupData{name='test 3', id='5'}, GroupData{name='test 4', id='6'}, GroupData{name='test 1', id='3'}, GroupData{name='test 2', id='4'}, GroupData{name='test 5', id='7'}, GroupData{name='test 6', id='8'}]&gt;
+     but: was &lt;[GroupData{name='test 0', id='10'}, GroupData{name='test13378', id='1'}, GroupData{name='test2', id='9'}, GroupData{name='test 1', id='11'}, GroupData{name='test 2', id='12'}, GroupData{name='test 0', id='2'}, GroupData{name='test 3', id='5'}, GroupData{name='test 4', id='6'}, GroupData{name='test 1', id='3'}, GroupData{name='test 2', id='4'}, GroupData{name='test 5', id='7'}, GroupData{name='test 6', id='8'}]&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at ru.alksndr.software.testing.addressbook.tests.GroupCreationTests.testGroupCreation(GroupCreationTests.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:139)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:89)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:131)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+</stack-trace>
+            </failure>
+            <steps/>
+            <attachments>
+                <attachment title="Page screenshot" source="89c46475-1f26-42fc-a76a-34e49dbe07db-attachment.png" type="image/png"/>
+            </attachments>
+            <labels>
+                <label name="testSuite" value="Suite1"/>
+                <label name="testGroup" value="Group"/>
+                <label name="testClass" value="ru.alksndr.software.testing.addressbook.tests.GroupCreationTests"/>
+                <label name="testMethod" value="testGroupCreation"/>
+                <label name="host" value="iMac-ALEXANDR.local"/>
+                <label name="thread" value="5736@iMac-ALEXANDR.local.Test worker(12)"/>
+            </labels>
+        </test-case>
+        <test-case start="1551037605164" stop="1551037607373" status="failed">
+            <name>testGroupCreation[GroupData{name='test 3', id='2147483647'}]</name>
+            <failure>
+                <message>AssertionError: 
+Expected: &lt;[GroupData{name='test 0', id='10'}, GroupData{name='test13378', id='1'}, GroupData{name='test2', id='9'}, GroupData{name='test 3', id='13'}, GroupData{name='test 1', id='11'}, GroupData{name='test 2', id='12'}, GroupData{name='test 0', id='2'}, GroupData{name='test 3', id='5'}, GroupData{name='test 4', id='6'}, GroupData{name='test 1', id='3'}, GroupData{name='test 2', id='4'}, GroupData{name='test 5', id='7'}, GroupData{name='test 6', id='8'}]&gt;
+     but: was &lt;[GroupData{name='test 0', id='10'}, GroupData{name='test13378', id='1'}, GroupData{name='test2', id='9'}, GroupData{name='test 1', id='11'}, GroupData{name='test 2', id='12'}, GroupData{name='test 3', id='13'}, GroupData{name='test 0', id='2'}, GroupData{name='test 3', id='5'}, GroupData{name='test 4', id='6'}, GroupData{name='test 1', id='3'}, GroupData{name='test 2', id='4'}, GroupData{name='test 5', id='7'}, GroupData{name='test 6', id='8'}]&gt;</message>
+                <stack-trace>java.lang.AssertionError: 
+Expected: &lt;[GroupData{name='test 0', id='10'}, GroupData{name='test13378', id='1'}, GroupData{name='test2', id='9'}, GroupData{name='test 3', id='13'}, GroupData{name='test 1', id='11'}, GroupData{name='test 2', id='12'}, GroupData{name='test 0', id='2'}, GroupData{name='test 3', id='5'}, GroupData{name='test 4', id='6'}, GroupData{name='test 1', id='3'}, GroupData{name='test 2', id='4'}, GroupData{name='test 5', id='7'}, GroupData{name='test 6', id='8'}]&gt;
+     but: was &lt;[GroupData{name='test 0', id='10'}, GroupData{name='test13378', id='1'}, GroupData{name='test2', id='9'}, GroupData{name='test 1', id='11'}, GroupData{name='test 2', id='12'}, GroupData{name='test 3', id='13'}, GroupData{name='test 0', id='2'}, GroupData{name='test 3', id='5'}, GroupData{name='test 4', id='6'}, GroupData{name='test 1', id='3'}, GroupData{name='test 2', id='4'}, GroupData{name='test 5', id='7'}, GroupData{name='test 6', id='8'}]&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at ru.alksndr.software.testing.addressbook.tests.GroupCreationTests.testGroupCreation(GroupCreationTests.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:139)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:89)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:131)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+</stack-trace>
+            </failure>
+            <steps/>
+            <attachments>
+                <attachment title="Page screenshot" source="eae86774-4ee4-44fd-8b6c-4164d4a35e0f-attachment.png" type="image/png"/>
+            </attachments>
+            <labels>
+                <label name="testSuite" value="Suite1"/>
+                <label name="testGroup" value="Group"/>
+                <label name="testClass" value="ru.alksndr.software.testing.addressbook.tests.GroupCreationTests"/>
+                <label name="testMethod" value="testGroupCreation"/>
+                <label name="host" value="iMac-ALEXANDR.local"/>
+                <label name="thread" value="5736@iMac-ALEXANDR.local.Test worker(12)"/>
+            </labels>
+        </test-case>
+        <test-case start="1551037607374" stop="1551037609509" status="failed">
+            <name>testGroupCreation[GroupData{name='test 4', id='2147483647'}]</name>
+            <failure>
+                <message>AssertionError: 
+Expected: &lt;[GroupData{name='test 0', id='10'}, GroupData{name='test13378', id='1'}, GroupData{name='test2', id='9'}, GroupData{name='test 4', id='14'}, GroupData{name='test 1', id='11'}, GroupData{name='test 2', id='12'}, GroupData{name='test 3', id='13'}, GroupData{name='test 0', id='2'}, GroupData{name='test 3', id='5'}, GroupData{name='test 4', id='6'}, GroupData{name='test 1', id='3'}, GroupData{name='test 2', id='4'}, GroupData{name='test 5', id='7'}, GroupData{name='test 6', id='8'}]&gt;
+     but: was &lt;[GroupData{name='test 0', id='10'}, GroupData{name='test13378', id='1'}, GroupData{name='test2', id='9'}, GroupData{name='test 4', id='14'}, GroupData{name='test 1', id='11'}, GroupData{name='test 2', id='12'}, GroupData{name='test 3', id='13'}, GroupData{name='test 0', id='2'}, GroupData{name='test 3', id='5'}, GroupData{name='test 4', id='6'}, GroupData{name='test 1', id='3'}, GroupData{name='test 2', id='4'}, GroupData{name='test 5', id='7'}, GroupData{name='test 6', id='8'}]&gt;</message>
+                <stack-trace>java.lang.AssertionError: 
+Expected: &lt;[GroupData{name='test 0', id='10'}, GroupData{name='test13378', id='1'}, GroupData{name='test2', id='9'}, GroupData{name='test 4', id='14'}, GroupData{name='test 1', id='11'}, GroupData{name='test 2', id='12'}, GroupData{name='test 3', id='13'}, GroupData{name='test 0', id='2'}, GroupData{name='test 3', id='5'}, GroupData{name='test 4', id='6'}, GroupData{name='test 1', id='3'}, GroupData{name='test 2', id='4'}, GroupData{name='test 5', id='7'}, GroupData{name='test 6', id='8'}]&gt;
+     but: was &lt;[GroupData{name='test 0', id='10'}, GroupData{name='test13378', id='1'}, GroupData{name='test2', id='9'}, GroupData{name='test 4', id='14'}, GroupData{name='test 1', id='11'}, GroupData{name='test 2', id='12'}, GroupData{name='test 3', id='13'}, GroupData{name='test 0', id='2'}, GroupData{name='test 3', id='5'}, GroupData{name='test 4', id='6'}, GroupData{name='test 1', id='3'}, GroupData{name='test 2', id='4'}, GroupData{name='test 5', id='7'}, GroupData{name='test 6', id='8'}]&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at ru.alksndr.software.testing.addressbook.tests.GroupCreationTests.testGroupCreation(GroupCreationTests.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:139)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:89)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:131)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+</stack-trace>
+            </failure>
+            <steps/>
+            <attachments>
+                <attachment title="Page screenshot" source="a4ecd554-3b5a-49a1-b57b-35c4cc6ce339-attachment.png" type="image/png"/>
+            </attachments>
+            <labels>
+                <label name="testSuite" value="Suite1"/>
+                <label name="testGroup" value="Group"/>
+                <label name="testClass" value="ru.alksndr.software.testing.addressbook.tests.GroupCreationTests"/>
+                <label name="testMethod" value="testGroupCreation"/>
+                <label name="host" value="iMac-ALEXANDR.local"/>
+                <label name="thread" value="5736@iMac-ALEXANDR.local.Test worker(12)"/>
+            </labels>
+        </test-case>
+        <test-case start="1551037609518" stop="1551037611678" status="failed">
+            <name>testGroupCreation[GroupData{name='test 5', id='2147483647'}]</name>
+            <failure>
+                <message>AssertionError: 
+Expected: &lt;[GroupData{name='test 0', id='10'}, GroupData{name='test13378', id='1'}, GroupData{name='test2', id='9'}, GroupData{name='test 5', id='15'}, GroupData{name='test 4', id='14'}, GroupData{name='test 1', id='11'}, GroupData{name='test 2', id='12'}, GroupData{name='test 3', id='13'}, GroupData{name='test 0', id='2'}, GroupData{name='test 3', id='5'}, GroupData{name='test 4', id='6'}, GroupData{name='test 1', id='3'}, GroupData{name='test 2', id='4'}, GroupData{name='test 5', id='7'}, GroupData{name='test 6', id='8'}]&gt;
+     but: was &lt;[GroupData{name='test 0', id='10'}, GroupData{name='test13378', id='1'}, GroupData{name='test2', id='9'}, GroupData{name='test 4', id='14'}, GroupData{name='test 5', id='15'}, GroupData{name='test 1', id='11'}, GroupData{name='test 2', id='12'}, GroupData{name='test 3', id='13'}, GroupData{name='test 0', id='2'}, GroupData{name='test 3', id='5'}, GroupData{name='test 4', id='6'}, GroupData{name='test 1', id='3'}, GroupData{name='test 2', id='4'}, GroupData{name='test 5', id='7'}, GroupData{name='test 6', id='8'}]&gt;</message>
+                <stack-trace>java.lang.AssertionError: 
+Expected: &lt;[GroupData{name='test 0', id='10'}, GroupData{name='test13378', id='1'}, GroupData{name='test2', id='9'}, GroupData{name='test 5', id='15'}, GroupData{name='test 4', id='14'}, GroupData{name='test 1', id='11'}, GroupData{name='test 2', id='12'}, GroupData{name='test 3', id='13'}, GroupData{name='test 0', id='2'}, GroupData{name='test 3', id='5'}, GroupData{name='test 4', id='6'}, GroupData{name='test 1', id='3'}, GroupData{name='test 2', id='4'}, GroupData{name='test 5', id='7'}, GroupData{name='test 6', id='8'}]&gt;
+     but: was &lt;[GroupData{name='test 0', id='10'}, GroupData{name='test13378', id='1'}, GroupData{name='test2', id='9'}, GroupData{name='test 4', id='14'}, GroupData{name='test 5', id='15'}, GroupData{name='test 1', id='11'}, GroupData{name='test 2', id='12'}, GroupData{name='test 3', id='13'}, GroupData{name='test 0', id='2'}, GroupData{name='test 3', id='5'}, GroupData{name='test 4', id='6'}, GroupData{name='test 1', id='3'}, GroupData{name='test 2', id='4'}, GroupData{name='test 5', id='7'}, GroupData{name='test 6', id='8'}]&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at ru.alksndr.software.testing.addressbook.tests.GroupCreationTests.testGroupCreation(GroupCreationTests.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:139)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:89)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:131)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+</stack-trace>
+            </failure>
+            <steps/>
+            <attachments>
+                <attachment title="Page screenshot" source="1509e1d7-6898-4f7d-af9b-006a6c6ff9a9-attachment.png" type="image/png"/>
+            </attachments>
+            <labels>
+                <label name="testSuite" value="Suite1"/>
+                <label name="testGroup" value="Group"/>
+                <label name="testClass" value="ru.alksndr.software.testing.addressbook.tests.GroupCreationTests"/>
+                <label name="testMethod" value="testGroupCreation"/>
+                <label name="host" value="iMac-ALEXANDR.local"/>
+                <label name="thread" value="5736@iMac-ALEXANDR.local.Test worker(12)"/>
+            </labels>
+        </test-case>
+        <test-case start="1551037611680" stop="0" status="passed">
+            <name>testGroupCreation[GroupData{name='test 6', id='2147483647'}]</name>
+            <labels>
+                <label name="testSuite" value="Suite1"/>
+                <label name="testGroup" value="Group"/>
+                <label name="testClass" value="ru.alksndr.software.testing.addressbook.tests.GroupCreationTests"/>
+                <label name="testMethod" value="testGroupCreation"/>
+                <label name="host" value="iMac-ALEXANDR.local"/>
+                <label name="thread" value="5736@iMac-ALEXANDR.local.Test worker(12)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

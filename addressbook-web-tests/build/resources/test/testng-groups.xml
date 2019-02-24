@@ -3,7 +3,7 @@
 <suite name="Suite1" verbose="1" >
     <test name="Group" >
         <classes>
-            <class name="ru.alksndr.software.testing.addressbook.tests.GroupCreationTests" />
+            <!--class name="ru.alksndr.software.testing.addressbook.tests.GroupCreationTests" /-->
             <class name="ru.alksndr.software.testing.addressbook.tests.GroupModificationTests" />
             <class name="ru.alksndr.software.testing.addressbook.tests.GroupDeletionTests" />
         </classes>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1551037817721" stop="1551037821799" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Suite1 : Group</name>
+    <title>Suite1 : Group</title>
+    <test-cases>
+        <test-case start="1551037818965" stop="1551037820305" status="passed">
+            <name>testGroupModification</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Suite1"/>
+                <label name="testGroup" value="Group"/>
+                <label name="testClass" value="ru.alksndr.software.testing.addressbook.tests.GroupModificationTests"/>
+                <label name="testMethod" value="testGroupModification"/>
+                <label name="host" value="iMac-ALEXANDR.local"/>
+                <label name="thread" value="6698@iMac-ALEXANDR.local.Test worker(12)"/>
+            </labels>
+        </test-case>
+        <test-case start="1551037820930" stop="1551037821795" status="passed">
+            <name>testGroupDeletion</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Suite1"/>
+                <label name="testGroup" value="Group"/>
+                <label name="testClass" value="ru.alksndr.software.testing.addressbook.tests.GroupDeletionTests"/>
+                <label name="testMethod" value="testGroupDeletion"/>
+                <label name="host" value="iMac-ALEXANDR.local"/>
+                <label name="thread" value="6698@iMac-ALEXANDR.local.Test worker(12)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

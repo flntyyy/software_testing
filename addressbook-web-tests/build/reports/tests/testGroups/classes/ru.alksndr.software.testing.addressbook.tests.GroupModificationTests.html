@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.016s</div>
+<div class="counter">1.283s</div>
 <p>duration</p>
 </div>
 </td>
@@ -76,29 +76,12 @@
 <a name="testGroupModification"></a>
 <h3 class="failures">testGroupModification</h3>
 <span class="code">
-<pre>org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'iMac-ALEXANDR.local', ip: '192.168.1.35', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.3', java.version: '9.0.4'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.5.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 28285, moz:profile: /var/folders/9j/0y0kcqnd3hg..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.2.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 1173f1c8-eea5-b74c-8a29-e5fcc4704f92
-*** Element info: {Using=tag name, value=h1}
-	at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByTagName(RemoteWebDriver.java:396)
-	at org.openqa.selenium.By$ByTagName.findElement(By.java:320)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at ru.alksndr.software.testing.addressbook.appmanager.HelperBase.isElementPresent(HelperBase.java:52)
-	at ru.alksndr.software.testing.addressbook.appmanager.NavigationHelper.groupPage(NavigationHelper.java:13)
-	at ru.alksndr.software.testing.addressbook.tests.GroupModificationTests.testGroupModification(GroupModificationTests.java:28)
+<pre>java.lang.AssertionError: 
+Expected: &lt;[GroupData{name='test 6', id='8'}, GroupData{name='test 2', id='4'}, GroupData{name='test 3', id='5'}, GroupData{name='test 0', id='2'}, GroupData{name='test 1', id='3'}, GroupData{name='test13378', id='1'}, GroupData{name='test2', id='9'}, GroupData{name='test13378', id='6'}, GroupData{name='test 5', id='15'}, GroupData{name='test 3', id='13'}, GroupData{name='test 4', id='14'}, GroupData{name='test13378', id='7'}, GroupData{name='test 1', id='11'}, GroupData{name='test 2', id='12'}]&gt;
+     but: was &lt;[GroupData{name='test 5', id='7'}, GroupData{name='test 6', id='8'}, GroupData{name='test 2', id='4'}, GroupData{name='test 3', id='5'}, GroupData{name='test 0', id='2'}, GroupData{name='test 1', id='3'}, GroupData{name='test13378', id='1'}, GroupData{name='test2', id='9'}, GroupData{name='test13378', id='6'}, GroupData{name='test 5', id='15'}, GroupData{name='test 3', id='13'}, GroupData{name='test 4', id='14'}, GroupData{name='test 1', id='11'}, GroupData{name='test 2', id='12'}]&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at ru.alksndr.software.testing.addressbook.tests.GroupModificationTests.testGroupModification(GroupModificationTests.java:32)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -165,7 +148,7 @@ Session ID: 1173f1c8-eea5-b74c-8a29-e5fcc4704f92
 </thead>
 <tr>
 <td class="failures">testGroupModification</td>
-<td class="failures">0.016s</td>
+<td class="failures">1.283s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -173,7 +156,8 @@ Session ID: 1173f1c8-eea5-b74c-8a29-e5fcc4704f92
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>20:06:35.657 [Test worker] INFO  r.a.s.t.addressbook.tests.TestBase - Start test testGroupModification with parameters []
+<pre>22:51:31.775 [Test worker] INFO  r.a.s.t.addressbook.tests.TestBase - Start test testGroupModification with parameters []
+Hibernate: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
 Hibernate: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
 Hibernate: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
 </pre>
@@ -187,7 +171,7 @@ Hibernate: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.10</a> at Feb 23, 2019, 8:06:37 PM</p>
+<a href="http://www.gradle.org">Gradle 4.10</a> at Feb 24, 2019, 10:51:37 PM</p>
 </div>
 </div>
 </body>
