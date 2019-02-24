@@ -54,3 +54,5 @@ gradle-app.setting
 .idea/libraries/Gradle__commons_beanutils_commons_beanutils_core_1_8_3.xml
 .idea/libraries/Gradle__com_sun_xml_bind_jaxb_impl_2_2_7.xml
 .idea/libraries/Gradle__com_sun_xml_bind_jaxb_core_2_2_7.xml
+addressbook-web-tests/build/.DS_Store
+addressbook-web-tests/.DS_Store
